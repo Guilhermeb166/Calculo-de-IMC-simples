@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    
+</head>
+<body>
+    <main>
+        <section id="imc">
+            <h1>O que é IMC?</h1>
+            <p>O IMC, ou Índice de Massa Corporal, é um cálculo simples que permite avaliar se a pessoa está dentro do peso que é considerado ideal para a sua altura.</p>
+            <p>O IMC é uma fórmula utilizada por vários profissionais de saúde, incluindo médicos, nutricionistas, profissionais de educação física e enfermeiros, para saber, de uma forma rápida, se a pessoa está com o peso adequado ou se precisa ganhar ou perder peso.</p>
+            <p>Embora seja uma ferramenta muito comum, o IMC não é considerado a forma mais exata de avaliar o peso, já que não leva em consideração a composição corporal. Por isso, no caso de atletas (que têm maior quantidade de massa muscular), é aconselhado usar outras técnicas, como a bioimpedância, para uma avaliação mais verdadeira da composição corporal.</p>
+        </section>
+        <section id="calculo">
+            
+                <h1>Como calcular o IMC</h1>
+                <p>O cálculo do IMC é feito usando a seguinte fórmula: peso (kg) ÷ altura<sup>2</sup> (m).</p>
+                <div id="container">
+                    <div id="valores">
+                    <label for="idaltura">Altura(metros): </label>
+                    <input type="number" name="altura" id="idaltura" placeholder="ex: 1,70" required maxlength="3">
+                    <label for="idpeso">Peso(kg): </label>
+                    <input type="number" name="peso" id="idpeso" required maxlength="3">
+                    <input type="button" value="Calcular" onclick="calcular()">
+                </div>
+                <div id="resultado">resultado</div>
+            </div>
+        </section>
+        <section id="tabela">
+            <h1>Tabela de IMC</h1>
+            <p>A tabela a seguir indica a classificação dos valores de IMC, de acordo com a Organização Mundial da Saúde:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">IMC (kg/m²)</th>
+                        <th scope="col"> Classificação</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menor que 18,5</td>
+                    <td>Baixo peso</td>
+                </tr>
+                <tr>
+                    <td>De 18,5 a 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>De 25 a 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>De 30 a 34,9</td>
+                    <td>Obesidade grau I</td>
+                </tr>
+                <tr>
+                    <td>De 35 a 39.9</td>
+                    <td>Obesidade grau II</td>
+                </tr>
+                <tr>
+                    <td>Igual ou maior que 40</td>
+                    <td>Obesidade grau III</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+
+        <script src="js/script.js"></script>
+
+    </main>
+    <footer>
+        <p>Criado por Guilherme Barroso</p>
+    </footer>
+</body>
+</html>
