@@ -22,12 +22,16 @@
                 <div id="container">
                     <div id="valores">
                     <label for="idaltura">Altura(metros): </label>
-                    <input type="number" name="altura" id="idaltura" placeholder="ex: 1,70" required maxlength="3">
+                    <input type="number" name="altura" id="idaltura" placeholder="ex: 1,70" maxlength="3">
+
                     <label for="idpeso">Peso(kg): </label>
-                    <input type="number" name="peso" id="idpeso" required maxlength="3">
+                    <input type="number" name="peso" id="idpeso">
+
                     <input type="button" value="Calcular" onclick="calcular()">
                 </div>
-                <div id="resultado">resultado</div>
+                <div id="containerRes">
+                    <div id="resultado"></div>
+                </div>
             </div>
         </section>
         <section id="tabela">

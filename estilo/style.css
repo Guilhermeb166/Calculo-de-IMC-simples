@@ -13,60 +13,69 @@
     --cor04:#F0F0F0;
 
 }
+
 main h1{
     background-image: linear-gradient(to right,var(--cor02),var(--cor00)
     );
     color: white;
     padding: 12px 0px;
     margin-bottom: 20px;
-    text-indent: 5px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.605);
 }
-#imc p{
-    margin: 17px 7px;
+
+p,h1{
     text-indent: 5px;
+}
+
+#imc p{
+    width: 80vw;
+    text-align: justify;
+    margin: 17px 0;
     line-height: 20px;
     font-size: 1.1em;
 }
+
 #calculo{
     margin-top: 50px;
 }
+
 #calculo p{
-    margin:0 5px 30px;
+    margin-bottom: 30px;
 }
+
 #container{
     display: flex;
-    justify-content: space-around;
-    
-    
-}
-#valores {
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    position: relative;
-    left: -80px;
-    background-color: var(--cor04);
-    padding: 25px;
-    border-radius: 6px;
-    font-weight: 700;
+    justify-content: center;
 
 }
+
+#valores {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--cor04);
+    padding: 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    
+    width: 300px;
+
+}
+
 #valores input[type=number]{    
     margin: 15px 0;
     border: 1px solid rgba(0, 0, 0, 0.263);
     border-radius: 8px;
     padding: 2px;
+    font-size: 1.1em;
     outline: none;
-}
-#valores input:focus{
     text-align: center;
-    
 }
+
 #valores input[type=button] {
     background-color: var(--cor01);
     color: var(--cor00);
-    margin: 10px 0px;
+    margin: 10px 0;
     padding: 8px 18px;
     border-radius: 8px;
     margin: auto;
@@ -75,27 +84,47 @@ main h1{
     font-weight: 700;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.578);
 }
+
 #valores input[type=button]:hover{
     background-color: var(--cor03);
 }
-#resultado{
-    margin: 10px 0px;
-    text-align: center;
+
+#containerRes{
+    margin:60px 0 0 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.501); 
+    width: 250px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.455);
 }
+
+#resultado{
+    text-align: justify;
+    font:700 1em arial;
+    margin: 0px 10px;
+}
+
 #tabela{
     margin-top: 50px;
 }
+
 table{
     border-collapse: collapse;
     width: 400px;
     height: 300px;
     margin:auto;
+    margin-top: 20px;
 }
+
 td{
     border: 1px solid black;
     text-align: center;
     
 }
+
 footer{
     margin-top: 70px;
     background-color: var(--cor02);
